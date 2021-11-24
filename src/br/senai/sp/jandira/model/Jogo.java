@@ -3,11 +3,13 @@ package br.senai.sp.jandira.model;
 public class Jogo {
 
 	private String titulo;
-	private String Fabricante;
+	private Fabricante fabricante;
 	private Console console;
 	private String valorEstimado;
+	private String jogo;
 	private String observacoes;
 
+	
 	public String getTitulo() {
 		return titulo;
 	}
@@ -16,12 +18,12 @@ public class Jogo {
 		this.titulo = titulo;
 	}
 
-	public String getFabricante() {
-		return Fabricante;
+	public Fabricante getFabricante() {
+		return fabricante;
 	}
 
-	public void setFabricante(String fabricante) {
-		Fabricante = fabricante;
+	public void setFabricante(Fabricante fabricante) {
+		this.fabricante = fabricante;
 	}
 
 	public Console getConsole() {
